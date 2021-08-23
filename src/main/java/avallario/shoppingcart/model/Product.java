@@ -2,9 +2,9 @@ package avallario.shoppingcart.model;
 
 public class Product {
 
-    private String id;
-    private String name;
-    private Double price;
+    public String id;
+    public String name;
+    public Double price;
 
     public Product() {
     }
