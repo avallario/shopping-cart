@@ -2,12 +2,9 @@ package avallario.shoppingcart.model;
 
 public class Product {
 
-    public String id;
-    public String name;
-    public Double price;
-
-    public Product() {
-    }
+    private String id;
+    private String name;
+    private Double price;
 
     public Product(String id, String name, Double price) {
         this.id = id;
@@ -19,11 +16,23 @@ public class Product {
         return id;
     }
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public Double getPrice() {
         return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
     }
 }

@@ -1,15 +1,11 @@
 package avallario.shoppingcart.model;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Cart {
 
-    public String id;
-    public List<Product> products;
-
-    public Cart() {
-    }
+    private String id;
+    private List<Product> products;
 
     public Cart(String id, List<Product> products) {
         this.id = id;
@@ -20,8 +16,16 @@ public class Cart {
         return this.id;
     }
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public List<Product> getProducts() {
         return this.products;
+    }
+
+    public void setProducts(List<Product> products) {
+        this.products = products;
     }
 
 }
